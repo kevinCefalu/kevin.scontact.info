@@ -1,17 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="rain">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KEVIN_CEFALU | PRINCIPAL_ENGINEER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="unified-style.css" />
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+  <!-- Theme toggle button -->
+  <button id="theme-toggle" class="theme-toggle">
+    <span class="rain-label">OFFICE_VIEW</span>
+    <span class="office-label">RAIN_VIEW</span>
+  </button>
 
+  <!-- Rain theme elements -->
+  <div class="rain theme-rain-element"></div>
+
+  <!-- Office theme elements -->
+  <div class="office-background theme-office-element">
+    <div class="ambient-light"></div>
+  </div>
+  <div class="desk theme-office-element"></div>
+
+  <!-- Flex container for all content -->
+  <div class="wrapper">
+    <!-- Header section -->
+    <header class="theme-adaptive">
+      <div class="header-content">
+        <h1 class="orbitron-header">KEVIN_CEFALU</h1>
+        <p class="orbitron-header">PRINCIPAL_ENGINEER</p>
+        <nav>
+          <a href="mailto:kevin@cefalu.rocks">EMAIL</a>
+          <a href="https://kevin.scontact.info">PORTFOLIO</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Professional overview section -->
+      <section class="overview-section theme-adaptive">
+        <div class="section-content">
+          <h2 class="orbitron-header">PROFESSIONAL_OVERVIEW</h2>
+          <p>
+            Kevin Cefalu has over 15 years of experience in software development, systems architecture, leading teams, and mentoring engineers. He has enhanced efficiency and advanced technology across various roles and companies, all while delivering talks on DevOps principles, Microsoft PowerShell, and Azure; topics which reignited his passion for technology at a pivotal moment in his career.
+          </p>
+        </div>
+      </section>
+
+      <!-- Main content grid -->
+      <section class="grid-container">
+        <!-- Experience section -->
+        <div class="experience-section theme-adaptive">
+          <div class="section-content">
+            <h2 class="orbitron-header">EXPERIENCE</h2>
+            <ul>
+              <li>
+                <strong>Site Reliability Engineering</strong>
+                - Netchex, Covington | 2017 - Present
+                <p>Deployed and maintained over 1k Microsoft Azure resources...</p>
+              </li>
+              <li>
+                <strong>Software Engineering</strong>
+                - Pool Corporation, Covington | 2012 - 2017
+                <p>Developed internal and B2B applications...</p>
+              </li>
+              <li>
+                <strong>Web Development</strong>
+                - University of New Orleans | 2009 - 2012
+                <p>Maintained and developed applications for university systems...</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Side column -->
+        <div class="side-column">
+          <!-- Skills section -->
+          <div class="skills-section theme-adaptive">
+            <div class="section-content">
+              <h2 class="orbitron-header">SKILLS</h2>
+              <ul>
+                <li>Public Speaking</li>
+                <li>DevOps Principles</li>
+                <li>Infrastructure as Code</li>
+                <li>Leadership & Management</li>
+                <li>Software & Infrastructure Architecture</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tech expertise section -->
+          <div class="tech-expertise-section theme-adaptive">
+            <div class="section-content">
+              <h2 class="orbitron-header">TECH_EXPERTISE</h2>
+              <ul>
+                <li>Azure</li>
+                <li>Azure DevOps</li>
+                <li>Entra Id</li>
+                <li>PowerShell</li>
+                <li>C# .NET</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Achievements section -->
+          <div class="achievements-section theme-adaptive">
+            <div class="section-content">
+              <h2 class="orbitron-header">ACHIEVEMENTS</h2>
+              <p>
+                Public Speaking Engagements at PwSh + DevOps Global Summit, The PowerShell Podcast,
+                SELU ACM Chapter, SQL Saturday &dash; Baton Rouge
+              </p>
+              <p>Certified Azure Administrator ID: EFBA71019BDDDE2D</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Kevin Cefalu. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="theme-switcher.js"></script>
+</body>
 </html>
