@@ -1,6 +1,7 @@
 {
   "name": "kevin-scontact-info",
   "version": "1.8.1",
+  "description": "Kevin Cefalu's personal website",
   "scripts": {
     "start": "sirv ./src public --cors --single --no-clear --port 8000"
   }
