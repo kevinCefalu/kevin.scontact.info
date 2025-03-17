@@ -1,0 +1,173 @@
+/*
+ * Resume Styles for Kevin Cefalu
+ * Section-specific styles
+ */
+
+/* Experience Articles */
+.experience-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--secondary-light);
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Skills Section */
+#skills {
+}
+
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+#skills ul ul {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding-left: 1rem;
+  grid-template-columns: 1fr;
+}
+
+#skills > ul > li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 0rem 0.5rem 0rem 2rem;
+  border-radius: 4px;
+  border-left: 3px solid var(--primary-green);
+}
+
+#skills > ul > li::before {
+  content: "✓";
+  color: var(--primary-green);
+  position: absolute;
+  left: 0.5rem;
+  font-weight: bold;
+}
+
+#skills ul ul li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.95em;
+}
+
+#skills ul ul li::before {
+  content: "•";
+  color: var(--primary-dark);
+  position: absolute;
+  left: 0;
+}
+
+/* Skill category headings */
+#skills > ul > li > span {
+  font-weight: 600;
+  color: var(--secondary-blue);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Education and Certificates */
+.education-item, .certificate-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--secondary-light);
+}
+
+.education-item:last-child, .certificate-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#education ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#education li {
+  padding-left: 0;
+}
+
+#education .education-item {
+  margin-top: 1.5rem;
+}
+
+#education .education-list {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+#education .education-list li {
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 0.25rem;
+  color: var(--primary-dark-light);
+  font-size: 0.95rem;
+  flex: 1 0 auto;
+  min-width: 200px;
+}
+
+/* Remove bullets from specific sections */
+#education ul,
+#certificates ul,
+#publications ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#education li,
+#certificates li,
+#publications li {
+  padding-left: 0;
+}
+
+/* Publications Section */
+.publication-item {
+  margin-bottom: 1.5rem;
+}
+
+.publication-item:last-child {
+  margin-bottom: 0;
+}
+
+.publication-item h3 {
+  font-size: 1.3rem;
+}
+
+/* Profiles & Messaging Section */
+#profiles ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#profiles li {
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#profiles li span {
+  font-weight: 600;
+  color: var(--primary-dark);
+  min-width: 70px;
+}
+
+#profiles li a {
+  flex: 1;
+}

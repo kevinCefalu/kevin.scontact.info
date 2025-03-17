@@ -1,0 +1,234 @@
+/*
+ * Resume Styles for Kevin Cefalu
+ * Responsive styles - all media queries grouped together by breakpoint
+ */
+
+/* Tablet Breakpoint (768px and above) */
+@media screen and (min-width: 768px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  header {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .header-main {
+    grid-column: 1;
+  }
+
+  .profile-photo {
+    grid-column: 2;
+    grid-row: span 2;
+  }
+
+  .actions {
+    grid-column: 1;
+    justify-content: flex-start;
+  }
+
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: min-content;
+    align-items: start;
+  }
+
+  /* Education section adjustments */
+  #education .education-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Update section width classes for tablet */
+  .half-width {
+    grid-column: auto / span 1;
+  }
+
+  .one-third-width {
+    grid-column: auto / span 1;
+  }
+
+  .two-thirds-width {
+    grid-column: auto / span 2;
+  }
+
+  /* Skills layout for tablets */
+  #skills ul {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+/* Medium screens - tablet and small desktop layout (992px and above) */
+@media screen and (min-width: 992px) {
+  body {
+    padding: 2rem;
+  }
+
+  /* Use a full-width approach for summary to maximize space */
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: min-content;
+  }
+
+  /* Two-column layout for skills and languages/interests sections */
+  #skills, #languages, #interests {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  #skills > h2,
+  #languages > h2,
+  #interests > h2 {
+    grid-column: 1 / -1;
+  }
+
+  #skills ul,
+  #languages ul,
+  #interests ul {
+    grid-column: span 1;
+  }
+
+  /* Make the skills section span the full width */
+  #skills {
+    grid-column: 1 / -1;
+  }
+
+  /* Ensure the skills list uses all available space */
+  #skills ul {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  /* Update section width classes for desktop */
+  .one-third-width {
+    grid-column: auto / span 1;
+  }
+
+  .two-thirds-width {
+    grid-column: auto / span 2;
+  }
+
+  #summary {
+    grid-column: span 3;
+  }
+
+  #experience {
+    grid-column: span 2;
+  }
+
+  #education,
+  #interests {
+    grid-column: span 1;
+  }
+
+  #publications {
+    grid-column: span 2;
+  }
+}
+
+/* Large desktop layout (1200px and above) */
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 2.5rem;
+    max-width: 90%;
+  }
+
+  /* Full-width summary for better readability */
+  #summary {
+    max-width: 100%;
+  }
+
+  /* Create a 3-column grid layout for better space utilization */
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
+    gap: 1.5rem;
+  }
+
+  /* Place sections strategically in the grid */
+  #summary,
+  #experience {
+    grid-column: span 2;
+  }
+
+  #skills {
+    grid-column: span 3;
+    display: block; /* Reset the nested grid */
+  }
+
+  #skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.5rem;
+  }
+
+  #education,
+  #certificates,
+  #profiles {
+    grid-column: span 1;
+  }
+
+  #publications {
+    grid-column: span 2;
+  }
+
+  #languages,
+  #interests {
+    grid-column: span 1;
+    display: block; /* Reset the nested grid */
+  }
+
+  /* Make key content sections more readable */
+  .experience-item p,
+  .experience-item li,
+  #summary p {
+    max-width: none; /* Remove max-width constraint */
+  }
+}
+
+/* Very large screens (1600px and above) */
+@media screen and (min-width: 1600px) {
+  body {
+    padding: 3rem;
+    max-width: 85%;
+  }
+
+  /* Use a 4-column grid for even better space utilization */
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #summary {
+    grid-column: span 4; /* Full width for summary */
+  }
+
+  #experience {
+    grid-column: span 2; /* Half width for experience */
+    grid-row: span 3;
+  }
+
+  #skills {
+    grid-column: span 2; /* Full width for skills */
+  }
+
+  #skills ul {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  #education,
+  #certificates,
+  #languages,
+  #interests,
+  #profiles {
+    grid-column: span 1; /* Quarter width for smaller sections */
+  }
+
+  #publications {
+    grid-column: span 2; /* Half width for publications */
+  }
+}

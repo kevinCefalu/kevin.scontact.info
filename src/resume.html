@@ -40,44 +40,58 @@
     content="Professional resume of Kevin Cefalu, Principal Engineer with expertise in DevOps, PowerShell, and Azure">
   <meta name="DC.date" scheme="ISO8601" content="2025-03-11">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/resume.css">
+</head>
+
 <body>
   <header>
-    <h1>Kevin Cefalu</h1>
-    <p role="doc-subtitle">Principal Engineer</p>
+    <div class="header-main">
+      <h1>Kevin Cefalu</h1>
+      <p role="doc-subtitle">Principal Engineer</p>
 
-    <address>
-      <div>
-        <span>Email: </span>
-        <a href="mailto:kevin@cefalu.rocks">kevin@cefalu.rocks</a>
-      </div>
-      <div>
-        <span>Website: </span>
-        <a href="https://kevin.scontact.info/">kevin.scontact.info</a>
-      </div>
-      <div>
-        <span>Location: </span>
-        <span>Madisonville, Louisiana 70447-4006, US</span>
-      </div>
-    </address>
+      <address>
+        <div>
+          <span>Email: </span>
+          <a href="mailto:kevin@cefalu.rocks">kevin@cefalu.rocks</a>
+        </div>
+        <div>
+          <span>Website: </span>
+          <a href="https://kevin.scontact.info/">kevin.scontact.info</a>
+        </div>
+        <div>
+          <span>Location: </span>
+          <span>Madisonville, Louisiana 70447-4006, US</span>
+        </div>
+      </address>
 
-    <div>
-      <h2>Professional Profiles</h2>
-      <ul aria-label="Professional profiles">
-        <li>
-          <a href="https://www.linkedin.com/in/kevin-cefalu/">LinkedIn: kevin-cefalu</a>
-        </li>
-        <li>
-          <a href="https://www.github.com/kevincefalu/">GitHub: kevincefalu</a>
-        </li>
-        <li>Teams: kevin@psibit.engineering</li>
-        <li>Discord: psibit</li>
-      </ul>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/kevin-cefalu/" target="_blank" rel="noopener" title="LinkedIn Profile">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.github.com/kevincefalu/" target="_blank" rel="noopener" title="GitHub Profile">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="sip:kevin@psibit.engineering" target="_blank" rel="noopener" title="Microsoft Teams">
+          <i class="fab fa-microsoft"></i>
+        </a>
+        <a href="https://discordapp.com/users/188295077016240129" target="_blank" rel="noopener" title="Discord">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
     </div>
 
-    <figure>
+    <figure class="profile-photo">
       <img src="https://psibitengineeringsa.blob.core.windows.net/public/me-sketch.jpg"
         alt="Sketch portrait of Kevin Cefalu">
     </figure>
+
+    <!-- <div class="actions">
+      <button id="print-resume" class="action-button">Print Resume</button>
+    </div> -->
   </header>
 
   <main>
@@ -98,11 +112,10 @@
     <section id="experience">
       <h2>Work Experience</h2>
 
-      <article>
+      <article class="experience-item">
         <h3>Principal Site Reliability Engineer</h3>
-        <div>
-          <span>Netchex</span> | <span>Covington, LA 70433</span> | <time datetime="2017-08">August 2017</time> -
-          Present
+        <div class="company-details">
+          <span>Netchex</span> | <span>Covington, LA 70433</span> | <time datetime="2017-08">August 2017</time> - <time datetime="present">Present</time>
         </div>
         <p>Started as Software Engineer and progressed through DevOps Engineering and Management roles to Principal Site
           Reliability Engineer.</p>
@@ -124,9 +137,9 @@
         </ul>
       </article>
 
-      <article>
+      <article class="experience-item">
         <h3>Software Engineer II</h3>
-        <div>
+        <div class="company-details">
           <span>Pool Corporation</span> | <span>Covington, LA 70433</span> | <time datetime="2012-11">November
             2012</time> - <time datetime="2017-08">August 2017</time>
         </div>
@@ -144,9 +157,9 @@
         </ul>
       </article>
 
-      <article>
+      <article class="experience-item">
         <h3>Web Developer</h3>
-        <div>
+        <div class="company-details">
           <span>University of New Orleans</span> |
           <span>New Orleans, LA 70148</span> |
           <time datetime="2009-03">March 2009</time> -
@@ -167,6 +180,66 @@
       </article>
     </section>
 
+    <section id="publications">
+      <h2>Publications &amp; Presentations</h2>
+      <ul>
+        <li>
+          <article class="publication-item">
+            <h3><a target="_blank" rel="noopener" href="http://sqlsaturday.com/2019-08-17-SQLSat-0867">Azure Automation with PowerShell: Scripting Away
+                the Problems of Yesterday</a></h3>
+            <p>SQL Saturday #867 - <time datetime="2019-08-17">August 17, 2019</time></p>
+          </article>
+        </li>
+        <li>
+          <article class="publication-item">
+            <h3><a
+                href="http://github.com/kevinCefalu/Presentations/tree/master/src/instances/2020-What-the-____-Is-DevOps-Anyways">What
+                the #@&amp;% is DevOps, Anyways? A Presentation on DevOps, and Why You Should Care.</a></h3>
+            <p>SELU ACM - <time datetime="2020-03-10">March 10, 2020</time></p>
+          </article>
+        </li>
+        <li>
+          <article class="publication-item">
+            <h3><a
+                href="http://github.com/kevinCefalu/Presentations/tree/master/src/instances/2023-Dont-Skip-ARM-Day">Don't
+                Skip ARM Day: Your Bicep Will Thank You</a></h3>
+            <p>PowerShell + DevOps Global Summit Lightning Talk - <time datetime="2023-04-27">April 27, 2023</time></p>
+          </article>
+        </li>
+        <li>
+          <article class="publication-item">
+            <h3><a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=Xw5-SGH-pBk">Peer-to-Peer PowerShell: The Ins and Outs of Pair
+                Programming</a></h3>
+            <p>PowerShell + DevOps Global Summit - <time datetime="2024-04-09">April 9, 2024</time></p>
+          </article>
+        </li>
+        <li>
+          <article class="publication-item">
+            <h3><a
+                href="https://powershell.org/2023/04/the-powershell-podcast-powershell-and-devops-global-summit-the-bar-sessions/">The
+                PowerShell and DevOps Global Summit 2023 Bar Sessions</a></h3>
+            <p>The PowerShell Podcast - <time datetime="2024-04-27">April 27, 2024</time></p>
+          </article>
+        </li>
+        <li>
+          <article class="publication-item">
+            <h3><a
+                href="https://powershell.org/2023/12/the-powershell-podcast-breaking-down-barriers-in-powershell-and-management-with-kevin-cefalu/">Breaking
+                Down Barriers in PowerShell and Management with Kevin Cefalu</a></h3>
+            <p>The PowerShell Podcast - <time datetime="2023-12-04">December 4, 2023</time></p>
+          </article>
+        </li>
+        <li>
+          <article class="publication-item">
+            <h3><a
+                href="https://powershell.org/2024/04/the-powershell-podcast-the-powershell-devops-global-summit-2024-bar-session-1/">The
+                PowerShell & DevOps Global Summit 2024 Bar Session 1</a></h3>
+            <p>The PowerShell Podcast - <time datetime="2024-04-11">April 11, 2024</time></p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
     <section id="skills">
       <h2>Skills</h2>
       <ul>
@@ -178,172 +251,35 @@
         <li>Strategic Planning</li>
         <li>Leadership</li>
         <li>People Management</li>
-        <li>
-          <span>PowerShell</span>
-          <ul>
-            <li>PowerShell Scripting</li>
-            <li>PowerShell Modules</li>
-            <li>Desired State Configuration (DSC)</li>
-            <li>Robotic Process Automation</li>
-          </ul>
-        </li>
-        <li>
-          <span>Microsoft Azure</span>
-          <ul>
-            <li>Azure Resource Manager (ARM)</li>
-            <li>Azure Bicep</li>
-            <li>Azure PowerShell</li>
-            <li>Azure CLI</li>
-            <li>.NET Management & Client SDKs</li>
-            <li>Azure Kubernetes Service (AKS)</li>
-            <li>Azure Automation</li>
-            <li>CosmosDB</li>
-            <li>Application Gateways</li>
-            <li>Key Vaults</li>
-            <li>Container Registries</li>
-          </ul>
-        </li>
-        <li>
-          <span>Microsoft Azure DevOps</span>
-          <ul>
-            <li>Azure Pipelines</li>
-            <li>Pipeline Automation</li>
-          </ul>
-        </li>
+        <li>PowerShell</li>
+        <li>Microsoft Azure</li>
+        <li>Microsoft Azure DevOps</li>
         <li>C#</li>
-        <li>
-          <span>ASP.NET</span>
-          <ul>
-            <li>ASP.NET WebAPI</li>
-            <li>Legacy ASP</li>
-            <li>VB.NET</li>
-          </ul>
-        </li>
+        <li>ASP.NET</li>
         <li>Microsoft SQL Server</li>
         <li>Microsoft Windows (Desktop & Server)</li>
-        <li>Microsoft Active Directory</li>
         <li>Microsoft Entra Id</li>
         <li>Kubernetes</li>
         <li>Docker</li>
-        <li>Selenium</li>
-        <li>React.js</li>
-        <li>MongoDB</li>
-        <li>Packer</li>
-        <li>Vagrant</li>
       </ul>
     </section>
 
     <section id="education">
-      <h2>Education</h2>
+      <h2>Education &amp; Certificates</h2>
       <ul>
-        <li>
-          <div>
-            <h3>University of Louisiana at Lafayette</h3>
-            <p>Bachelor's in Electrical Engineering, Graphic Design, & Computer Science</p>
-            <p><time datetime="2004-08">August 2004</time> - <time datetime="2008-12">December 2008</time></p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Southeastern Louisiana University</h3>
-            <p>Bachelor's in Computer Science</p>
-            <p><time datetime="2009-01">January 2009</time> - <time datetime="2010-12">December 2010</time></p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>University of New Orleans</h3>
-            <p>Bachelor's in Computer Science</p>
-            <p><time datetime="2010-01">January 2010</time> - <time datetime="2012-12">December 2012</time></p>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section id="certificates">
-      <h2>Certificates</h2>
-      <ul>
-        <li>
-          <h3><a href="http://learn.microsoft.com/en-us/users/kevincefalu/credentials/efba71019bddde2d">Azure
+        <li class="certificate-item">
+          <h3><a target="_blank" rel="noopener" href="http://learn.microsoft.com/en-us/users/kevincefalu/credentials/efba71019bddde2d">Microsoft Azure
               Administrator Associate</a></h3>
-          <p>Microsoft</p>
-          <p>Issued: <time datetime="2023-10-01">October 2023</time></p>
+          <p><time datetime="2023-10-01">October 2023</time> - <time datetime="present">Present</time></p>
         </li>
-      </ul>
-    </section>
 
-    <section id="publications">
-      <h2>Publications &amp; Presentations</h2>
-      <ul>
-        <li>
-          <article>
-            <h3><a href="http://sqlsaturday.com/2019-08-17-SQLSat-0867">Azure Automation with PowerShell: Scripting Away
-                the Problems of Yesterday</a></h3>
-            <p>SQL Saturday #867 - Baton Rouge 2019</p>
-            <p><time datetime="2019-08-17">August 17, 2019</time></p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3><a
-                href="http://github.com/kevinCefalu/Presentations/tree/master/src/instances/2020-What-the-____-Is-DevOps-Anyways">What
-                the #@&amp;% is DevOps, Anyways? A Presentation on DevOps, and Why You Should Care.</a></h3>
-            <p>SELU ACM - March 2020</p>
-            <p><time datetime="2020-03-10">March 10, 2020</time></p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3><a
-                href="http://github.com/kevinCefalu/Presentations/tree/master/src/instances/2023-Dont-Skip-ARM-Day">Don't
-                Skip ARM Day: Your Bicep Will Thank You</a></h3>
-            <p>PowerShell + DevOps Global Summit Lightning Talk</p>
-            <p><time datetime="2023-04-27">April 27, 2023</time></p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3><a href="http://www.youtube.com/watch?v=Xw5-SGH-pBk">Peer-to-Peer PowerShell: The Ins and Outs of Pair
-                Programming</a></h3>
-            <p>PowerShell + DevOps Global Summit</p>
-            <p><time datetime="2024-04-09">April 9, 2024</time></p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3><a
-                href="https://powershell.org/2023/04/the-powershell-podcast-powershell-and-devops-global-summit-the-bar-sessions/">The
-                PowerShell and DevOps Global Summit 2023 Bar Sessions</a></h3>
-            <p>The PowerShell Podcast</p>
-            <p><time datetime="2024-04-27">April 27, 2024</time></p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3><a
-                href="https://powershell.org/2023/12/the-powershell-podcast-breaking-down-barriers-in-powershell-and-management-with-kevin-cefalu/">Breaking
-                Down Barriers in PowerShell and Management with Kevin Cefalu</a></h3>
-            <p>The PowerShell Podcast</p>
-            <p><time datetime="2023-12-04">December 4, 2023</time></p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3><a
-                href="https://powershell.org/2024/04/the-powershell-podcast-the-powershell-devops-global-summit-2024-bar-session-1/">The
-                PowerShell & DevOps Global Summit 2024 Bar Session 1</a></h3>
-            <p>The PowerShell Podcast</p>
-            <p><time datetime="2024-04-11">April 11, 2024</time></p>
-          </article>
-        </li>
-      </ul>
-    </section>
-
-    <section id="languages">
-      <h2>Languages</h2>
-      <ul>
-        <li>
-          <span>English</span> - <span>Native Speaker</span>
+        <li class="education-item">
+          <p>Studied Computer Science, Electrical Engineering, and Graphic Design at:</p>
+          <ul class="education-list">
+            <li>University of Louisiana at Lafayette (2004-2008)</li>
+            <li>Southeastern Louisiana University (2009-2010)</li>
+            <li>University of New Orleans (2010-2012)</li>
+          </ul>
         </li>
       </ul>
     </section>
@@ -351,15 +287,8 @@
     <section id="interests">
       <h2>Interests</h2>
       <ul>
-        <li>
-          Computer-aided Design (CAD)
-        </li>
-        <li>
-          3D Printing
-          <ul>
-            <li>Fused deposition modeling (FDM)</li>
-          </ul>
-        </li>
+        <li>Computer-aided Design (CAD)</li>
+        <li>3D Printing</li>
         <li>Home Automation</li>
         <li>Woodworking</li>
         <li>Electronics</li>
@@ -372,9 +301,13 @@
   </main>
 
   <footer>
-    <p>Last Updated: <time datetime="2025-03-11">March 11, 2025</time></p>
+    <!-- TODO: Create a way in which the build process updates this date on release of a new version -->
+    <p>Last Updated: <time datetime="2025-03-11">March 11<sup>th</sup>, 2025</time></p>
     <p>Version 1.8.1</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="js/resume.js"></script>
 </body>
 
 </html>

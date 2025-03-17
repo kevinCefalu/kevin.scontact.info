@@ -1,0 +1,15 @@
+/*
+ * Resume Styles for Kevin Cefalu
+ * Main entry point that imports all modular CSS files
+ */
+
+/* Import modular CSS files */
+@import 'modules/variables.css';
+@import 'modules/base.css';
+@import 'modules/layout.css';
+@import 'modules/components.css';
+@import 'modules/sections.css';
+@import 'modules/responsive.css';
+@import 'modules/print.css';
+@import 'modules/animations.css';
+@import 'modules/darkmode.css';
