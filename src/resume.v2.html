@@ -19,6 +19,23 @@
   <meta property="og:url" content="https://kevin.scontact.info/">
   <meta property="og:image" content="https://kevin.scontact.info/images/kevin-cefalu-profile.jpg">
 
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#00b451">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- For Apple devices -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="mask-icon" href="img/favicons/favicon.svg" color="#00b451">
+
+  <!-- For Microsoft -->
+  <meta name="msapplication-navbutton-color" content="#00b451">
+
   <link rel="canonical" href="https://kevin.scontact.info/resume.html">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/resume.v2.css">
@@ -36,15 +53,7 @@
       <h1>Kevin Cefalu</h1>
       <h2>Principal Engineer</h2>
     </div>
-    <div class="header-right">
-      <div class="contact-links">
-        <a href="mailto:kevin@cefalu.rocks" title="Email"><i class="fa-solid fa-envelope"></i> kevin@cefalu.rocks</a>
-        <a href="https://github.com/kevinCefalu" target="_blank" rel="noopener" title="GitHub"><i
-            class="fa-brands fa-github"></i> kevinCefalu</a>
-        <a href="https://www.linkedin.com/in/kevin-cefalu/" target="_blank" rel="noopener" title="LinkedIn"><i
-            class="fa-brands fa-linkedin"></i> kevincefalu</a>
-      </div>
-    </div>
+    <div class="header-right"></div>
   </header>
   <main>
     <section id="summary">
@@ -64,19 +73,19 @@
       <h3>Work Experience</h3>
 
       <article class="experience-item">
-        <h3>Principal Site Reliability Engineer</h3>
+        <h4>Principal Site Reliability Engineer</h4>
         <div class="company-details">
           <span>Netchex</span> | <span>Covington, LA 70433</span> | <time datetime="2017-08">August 2017</time> - <time
             datetime="present">Present</time>
         </div>
         <p>Started as Software Engineer and progressed through DevOps Engineering and Management roles to Principal Site
           Reliability Engineer.</p>
-        <h4>Key Accomplishments:</h4>
+        <h4>Key Accomplishments</h4>
         <ul>
           <li>Developed PowerShell scripts & modules to automate tasks and improve the quality of existing automation
           </li>
           <li>Designed, implemented, & manage three <abbr title="Azure Kubernetes Service">AKS</abbr> clusters</li>
-          <li>Overhauled manual process of building "team" development environments, reducing work from over a month to
+          <li>Overhauled manual process of building development environments, reducing work from over a month to
             4.5 hours</li>
           <li>Automated cloud and localhost environment state management using PowerShell on Azure Automation accounts
           </li>
@@ -92,21 +101,24 @@
       </article>
 
       <article class="experience-item">
-        <h3>Software Engineer II</h3>
+        <h4>Software Engineer II</h4>
         <div class="company-details">
           <span>Pool Corporation</span> |
           <span>Covington, LA 70433</span> |
           <time datetime="2012-11">November 2012</time> -
           <time datetime="2017-08">August 2017</time>
         </div>
-        <p>Developed several applications used by internal employees and customers, specializing in <abbr title="Business-to-Business">B2B</abbr> ecommerce
+        <p>Developed several applications used by internal employees and customers, specializing in <abbr
+            title="Business-to-Business">B2B</abbr> ecommerce
           websites.</p>
-        <h4>Key Accomplishments:</h4>
+        <h4>Key Accomplishments</h4>
         <ul>
-          <li>Main point of contact, nationally, for training and support of <abbr title="Business-to-Business">B2B</abbr> platform (including travel for on-site
+          <li>Main point of contact, nationally, for training and support of <abbr
+              title="Business-to-Business">B2B</abbr> platform (including travel for on-site
             support)</li>
           <li>Created a custom library to integrate a Google Search Appliance</li>
-          <li>Overhauled <abbr title="Windows Communication Foundation">WCF</abbr> service used to communicate with mobile apps</li>
+          <li>Overhauled <abbr title="Windows Communication Foundation">WCF</abbr> service used to communicate with
+            mobile apps</li>
           <li>Complete re-architecture of <abbr title="Business-to-Business">B2B</abbr> core</li>
           <li>Developed custom integrations for Skype for Business</li>
           <li>Tested technologies like Docker and Neo4j for use in applications</li>
@@ -114,7 +126,7 @@
       </article>
 
       <article class="experience-item">
-        <h3>Web Developer</h3>
+        <h4>Web Developer</h4>
         <div class="company-details">
           <span>University of New Orleans</span> |
           <span>New Orleans, LA 70148</span> |
@@ -122,7 +134,7 @@
           <time datetime="2012-11">November 2012</time>
         </div>
         <p>Developed custom applications and business logic for installed applications.</p>
-        <h4>Key Accomplishments:</h4>
+        <h4>Key Accomplishments</h4>
         <ul>
           <li>Worked with PeopleSoft, Microsoft Exchange, Microsoft Lync, DotNetNuke, SharePoint, and Infopath</li>
           <li>Redesigned old web services and processes to increase user efficiency, optimization, and maintainability
@@ -175,20 +187,43 @@
         <li>Boxing</li>
       </ul>
     </section>
-    <section id="education">
-      <h3>Education</h3>
+    <section id="credentials">
+      <h3>Credentials</h3>
       <article>
         <h4>Microsoft Certified: Azure Administrator Associate</h4>
-        <p><time datetime="2023-10-01">October 2023</time> - <time datetime="present">Present</time></p>
+        <div class="credential-details">
+          Credential ID: <a target="_blank" rel="noopener"
+            href="http://learn.microsoft.com/en-us/users/kevincefalu/credentials/efba71019bddde2d">EFBA71019BDDDE2D</a>
+          |
+          <time datetime="2023-10-01">October 2023</time> - <time datetime="present">Present</time>
+        </div>
+      </article>
+
+      <article>
+        <h4>University of New Orleans</h4>
+        <div class="credential-details">
+          <span>Computer Science & Computer Forensics</span> |
+          <time datetime="2010">2010</time> -
+          <time datetime="2012">2012</time>
+        </div>
       </article>
       <article>
-        <p>Studied Computer Science, Electrical Engineering, and Graphic Design at:</p>
-        <ul>
-          <li>University of Louisiana at Lafayette (2004-2008)</li>
-          <li>Southeastern Louisiana University (2009-2010)</li>
-          <li>University of New Orleans (2010-2012)</li>
-        </ul>
+        <h4>Southeastern Louisiana University</h4>
+        <div class="credential-details">
+          <span>Computer Science</span> |
+          <time datetime="2009">2009</time> -
+          <time datetime="2010">2010</time>
+        </div>
       </article>
+      <article>
+        <h4>University of Louisiana at Lafayette</h4>
+        <div class="credential-details">
+          <span>Electronics Engineering, Graphic Arts, &amp; Computer Science</span> |
+          <time datetime="2004">2004</time> -
+          <time datetime="2008">2008</time>
+        </div>
+      </article>
+
     </section>
     <section id="publications">
       <h3>Publications</h3>
@@ -234,6 +269,16 @@
             PowerShell & DevOps Global Summit 2024 Bar Session 1</a></h3>
         <p>The PowerShell Podcast - <time datetime="2024-04-11">April 11, 2024</time></p>
       </article>
+    </section>
+    <section id="communication">
+      <h3>Messaging & Profiles</h3>
+        <div class="contact-links">
+          <a href="mailto:kevin@cefalu.rocks" title="Email"><i class="fa-solid fa-envelope"></i> </a>
+          <a href="https://github.com/kevinCefalu" target="_blank" rel="noopener" title="GitHub"><i
+              class="fa-brands fa-github"></i> </a>
+          <a href="https://www.linkedin.com/in/kevin-cefalu/" target="_blank" rel="noopener" title="LinkedIn"><i
+              class="fa-brands fa-linkedin"></i> </a>
+      </div>
     </section>
   </main>
   <footer class="glass-card">
