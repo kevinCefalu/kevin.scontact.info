@@ -113,9 +113,9 @@ body {
 
 header {
   grid-area: header;
-  padding: 2rem;
+  padding: 0.8rem 2rem;
   position: sticky;
-  top: 16px;
+  top: 24px;
   z-index: 10;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -532,7 +532,7 @@ main {
 
     & article.publication-item {
       transition: all 0.3s ease;
-      padding: 0.2rem 1rem;
+      padding: 1rem;
       border-radius: 8px;
       margin-bottom: 0;
 
