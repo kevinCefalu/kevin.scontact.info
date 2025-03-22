@@ -1,0 +1,184 @@
+/**
+ * Icons CSS
+ *
+ * A collection of SVG icon styles for use throughout the website
+ * using background-image for easy integration
+ */
+
+:root {
+  --icon-size: 24px;
+  --icon-color-filter: invert(44%) sepia(96%) saturate(2151%) hue-rotate(128deg) brightness(92%) contrast(101%); /* #00B451 green */
+  --icon-size-small: 16px;
+  --icon-size-large: 32px;
+}
+
+/* Base icon class */
+.icon {
+  display: inline-block;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+/* Size variations */
+.icon-sm {
+  width: var(--icon-size-small);
+  height: var(--icon-size-small);
+}
+
+.icon-lg {
+  width: var(--icon-size-large);
+  height: var(--icon-size-large);
+}
+
+/* Add color filter */
+.icon-primary {
+  filter: var(--icon-color-filter);
+}
+
+/* Social & Brand Icons */
+.icon-github {
+  background-image: url("../img/icons/github-brands.svg");
+}
+
+.icon-square-github {
+  background-image: url("../img/icons/square-github-brands.svg");
+}
+
+.icon-linkedin {
+  background-image: url("../img/icons/linkedin-brands.svg");
+}
+
+.icon-linkedin-in {
+  background-image: url("../img/icons/linkedin-in-brands.svg");
+}
+
+.icon-discord {
+  background-image: url("../img/icons/discord-brands.svg");
+}
+
+.icon-microsoft {
+  background-image: url("../img/icons/microsoft-brands.svg");
+}
+
+.icon-microsoft-azure {
+  background-image: url("../img/icons/microsoft-azure.svg");
+}
+
+.icon-microsoft-teams {
+  background-image: url("../img/icons/microsoft-teams.svg");
+}
+
+.icon-windows {
+  background-image: url("../img/icons/windows-brands.svg");
+}
+
+.icon-docker {
+  background-image: url("../img/icons/docker-brands-solid.svg");
+}
+
+.icon-mandalorian {
+  background-image: url("../img/icons/mandalorian-brands-solid.svg");
+}
+
+.icon-git {
+  background-image: url("../img/icons/git-brands-solid.svg");
+}
+
+.icon-git-alt {
+  background-image: url("../img/icons/git-alt-brands-solid.svg");
+}
+
+.icon-markdown {
+  background-image: url("../img/icons/markdown-brands-solid.svg");
+}
+
+.icon-readme {
+  background-image: url("../img/icons/readme-brands-solid.svg");
+}
+
+/* UI Icons */
+.icon-envelope {
+  background-image: url("../img/icons/envelope-solid.svg");
+}
+
+.icon-link {
+  background-image: url("../img/icons/link-solid.svg");
+}
+
+.icon-graduation-cap {
+  background-image: url("../img/icons/graduation-cap-solid.svg");
+}
+
+.icon-minus {
+  background-image: url("../img/icons/minus-solid.svg");
+}
+
+/* Code Icons */
+.icon-code-branch {
+  background-image: url("../img/icons/code-branch-solid.svg");
+}
+
+.icon-code-commit {
+  background-image: url("../img/icons/code-commit-solid.svg");
+}
+
+.icon-code-compare {
+  background-image: url("../img/icons/code-compare-solid.svg");
+}
+
+.icon-code-fork {
+  background-image: url("../img/icons/code-fork-solid.svg");
+}
+
+.icon-code-merge {
+  background-image: url("../img/icons/code-merge-solid.svg");
+}
+
+.icon-code-pull-request {
+  background-image: url("../img/icons/code-pull-request-solid.svg");
+}
+
+.icon-check {
+  background-image: url("../img/icons/check-solid.svg");
+}
+
+/* Animation for loading or processing icons */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.icon-spin {
+  animation: spin 2s linear infinite;
+}
+
+/* Hover effects */
+.icon-hover-grow {
+  transition: transform 0.2s ease;
+}
+
+.icon-hover-grow:hover {
+  transform: scale(1.2);
+}
+
+/* Icon with text wrapper */
+.icon-with-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .icon:not(.icon-primary) {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); /* White */
+  }
+
+  .icon-primary {
+    filter: var(--icon-color-filter);
+  }
+}

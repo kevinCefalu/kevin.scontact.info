@@ -379,28 +379,19 @@ main {
       }
 
       &.publication-item h3 a::before {
-        /* content: "\f0c1";
+        content: "\f0c1";
         font-family: "Font Awesome 6 Free";
-        font-weight: 900; */
-        content: "";
-        background-image: url('../img/icons/link-solid.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+        font-weight: 900;
         position: absolute;
         left: -20px;
-        width: 0.7em;
-        height: 0.7em;
+        font-size: 0.7em;
         opacity: 0;
         transition: all 0.3s ease;
-        color: var(--primary-green);
-        filter: var(--icon-color-filter);
       }
 
       &.publication-item h3 a:hover::before {
         opacity: 1;
         left: -25px;
-        /* color: var(--primary-green); */
       }
     }
   }
@@ -415,6 +406,11 @@ main {
     background-clip: padding-box;
     background-color: var(--glass-bg);
     animation: fadeIn 1s ease-out;
+
+
+
+
+
 
     &>p {
       margin-left: 14rem;
@@ -434,24 +430,34 @@ main {
     grid-column: 5 / -1;
     grid-row: 5 / -1;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     & ul li {
       margin-bottom: 0.5rem;
       position: relative;
       padding-left: 1.5rem;
 
       &::before {
-        content: "";
-        background-image: url('../img/icons/check-solid.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+        content: "\f00c";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
         color: var(--primary-green);
         position: absolute;
         left: 0;
         top: 3px;
-        width: 0.8rem;
-        height: 0.8rem;
-        filter: var(--icon-color-filter);
+        font-size: 0.8rem;
       }
     }
   }
@@ -491,18 +497,14 @@ main {
       margin-bottom: 0.5rem;
 
       &::before {
-        content: "";
-        background-image: url('../img/icons/graduation-cap-solid.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+        content: "\f19d";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
         color: var(--secondary-blue);
         position: absolute;
         left: 0;
         top: 3px;
-        width: 0.8rem;
-        height: 0.8rem;
-        filter: invert(22%) sepia(34%) saturate(2259%) hue-rotate(180deg) brightness(96%) contrast(101%); /* Match secondary-blue */
+        font-size: 0.8rem;
       }
 
       &>ul>li {
@@ -511,18 +513,14 @@ main {
         margin-bottom: 0;
 
         &::before {
-          content: "";
-          background-image: url('../img/icons/minus-solid.svg');
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
+          content: "\f068";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
           color: var(--secondary-blue);
           position: absolute;
           left: 0;
           top: 3px;
-          width: 0.8rem;
-          height: 0.8rem;
-          filter: invert(22%) sepia(34%) saturate(2259%) hue-rotate(180deg) brightness(96%) contrast(101%); /* Match secondary-blue */
+          font-size: 0.8rem;
         }
       }
     }
