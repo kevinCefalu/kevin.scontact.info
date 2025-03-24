@@ -306,7 +306,7 @@ main > section#experience {
 }
 
 /* Large Desktop Breakpoint */
-@media screen and (max-width: 1280px) {
+@media (max-width: 1280px) {
   main > section#summary {
     grid-column: 1 / 9;
     grid-row: 1 / 4;
@@ -339,7 +339,7 @@ main > section#experience {
 }
 
 /* Medium Desktop/Tablet Landscape Breakpoint */
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   main {
     grid-template-columns: 1fr;
   }
@@ -356,7 +356,7 @@ main > section#experience {
 }
 
 /* Tablet/Mobile Breakpoint */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body {
     padding: 1rem 0.5rem;
     grid-template-columns: 1fr;
@@ -723,7 +723,7 @@ main > section#communication > .contact-links a:hover {
 
 /* ===== 7. Media Queries - Text & Component Adjustments ===== */
 /* Small Mobile Devices */
-@media screen and (max-width: 480px) {
+@media (max-width: 520px) {
   body {
     padding: 0.5rem;
   }
