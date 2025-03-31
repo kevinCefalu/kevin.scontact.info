@@ -8,7 +8,8 @@
       "methods": [
         "get"
       ],
-      "redirect": "https://psibitengineeringsa.blob.core.windows.net/public/kevin_cefalu.pdf"
+      "redirect": "https://psibitengineeringsa.blob.core.windows.net/public/kevin_cefalu.pdf",
+      "statusCode": 301
     },
     {
       "route": "/resume.docx",
