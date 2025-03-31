@@ -6,7 +6,7 @@
     {
       "route": "/resume.pdf",
       "methods": [
-        "get"
+        "GET"
       ],
       "redirect": "https://psibitengineeringsa.blob.core.windows.net/public/kevin_cefalu.pdf",
       "statusCode": 301
@@ -14,7 +14,7 @@
     {
       "route": "/resume.docx",
       "methods": [
-        "get"
+        "GET"
       ],
       "redirect": "https://1drv.ms/w/s!AlzS-XDtVxCPqJwmW4kXw691N4wMxQ?e=oRbsxn",
       "statusCode": 301
