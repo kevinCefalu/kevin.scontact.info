@@ -1,5 +1,14 @@
 {
   "mimeTypes": {
     ".webmanifest": "application/manifest+json"
-  }
+  },
+  "routes": [
+    {
+      "route": "/resume.pdf",
+      "methods": [
+        "get"
+      ],
+      "redirect": "https://psibitengineeringsa.blob.core.windows.net/public/kevin_cefalu.pdf"
+    }
+  ]
 }
