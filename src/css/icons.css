@@ -161,6 +161,8 @@
 
 .icon-word-document {
   background-image: url("../img/icons/word-document.svg");
+  /* width: 24px; */
+  height: 19px;
 }
 
 .icon-chevron-down {
