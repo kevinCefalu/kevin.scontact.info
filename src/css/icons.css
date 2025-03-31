@@ -117,6 +117,11 @@
   background-image: url("../img/icons/minus-solid.svg");
 }
 
+.icon-file-pdf::before {
+  content: "";
+  background-image: url('../img/icons/file-pdf-solid.svg');
+}
+
 /* Code Icons */
 .icon-code-branch {
   background-image: url("../img/icons/code-branch-solid.svg");
@@ -144,6 +149,22 @@
 
 .icon-check {
   background-image: url("../img/icons/check-solid.svg");
+}
+
+.icon-pdf-document {
+  background-image: url("../img/icons/pdf-document.svg");
+}
+
+.icon-resume {
+  background-image: url("../img/icons/resume.svg");
+}
+
+.icon-word-document {
+  background-image: url("../img/icons/word-document.svg");
+}
+
+.icon-chevron-down {
+  background-image: url("../img/icons/icon-chevron-down.svg");
 }
 
 /* Animation for loading or processing icons */
