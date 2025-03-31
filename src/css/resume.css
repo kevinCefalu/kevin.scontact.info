@@ -762,6 +762,7 @@ main > section#communication > .contact-links a:hover {
   position: relative;
   display: inline-block;
   padding-bottom: 10px;
+  z-index: 100;
 }
 
 .download-button {
@@ -797,31 +798,35 @@ main > section#communication > .contact-links a:hover {
   right: 0;
   margin-top: 5px;
   min-width: 160px;
-  z-index: 1;
+  z-index: 100;
   border-radius: 10px;
   overflow: hidden;
   padding: 5px 0;
+  background: var(--white);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .dropdown-content a {
-  color: var(--primary-dark-light);
+  color: var(--text);
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
   padding: 0.5rem 1rem;
-  background: var(--glass-bg);
-  -webkit-backdrop-filter: blur(var(--glass-blur));
-  backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid var(--glass-border);
+  background: var(--white);
+  border-bottom: 1px solid var(--glass-border);
+  font-weight: 500;
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
 }
 
 .dropdown-content a:hover {
   color: var(--primary-green);
   transform: translateX(5px);
-  box-shadow: var(--green-glow);
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--glass-bg);
 }
 
 .dropdown:hover .dropdown-content {
